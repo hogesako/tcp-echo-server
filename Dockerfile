@@ -9,4 +9,5 @@ RUN go build main.go
 FROM alpine
 WORKDIR /root/
 COPY --from=build /root/main .
+EXPOSE 2701
 CMD ["./main"]
